@@ -10,6 +10,8 @@ greet("Christopher");
 greet("Farouq");
 
 console.log()
+
+
 // Using Parameters to Perform Calculations
 
 function add(a, b) {
