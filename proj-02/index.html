@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <div
+      class="navbar w-full flex justify-between items-center py-5 px-20 bg-amber-200"
+    >
+      <div class="relative flex flex-col gap-4">
+        <button
+          id="link_01"
+          class="bg-blue-500 text-white w-fit px-4 py-2 rounded-md"
+        >
+          Menu
+        </button>
+        <div
+          id="drop"
+          class="hidden absolute top-full left-0 mt-2 bg-green-300 w-40 rounded-md shadow-lg z-50"
+        >
+          <div class="flex flex-col p-3 gap-2">
+            <a href="#">Link-02</a>
+            <a href="#">Link-03</a>
+            <a href="#">Link-04</a>
+            <a href="#">Link-05</a>
+          </div>
+        </div>
+      </div>
+      <div class="logo">
+        <h1 class="text-[36px] uppercase font-semibold">Dropdown</h1>
+      </div>
+      <button
+        class="bg-amber-600 text-white font-medium text-[18px] px-10 py-2.5 rounded-md"
+      >
+        Contact
+      </button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

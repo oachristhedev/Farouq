@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
+  line-height: 1;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 54px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+p,
+label {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#themeToggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  padding-block: 12px;
+  padding-inline: 12px;
+  background: #22222c;
+  border: none;
+  border-radius: 8px;
+}
+
+/* DARK THEME */
+
+body {
+  background: #0d0d16;
+  color: #ffffff;
+  font-family: "Poppins";
+  min-height: 100vh;
+  padding-bottom: 150px;
+}
+
+.container {
+  width: min(1280px, 90%);
+  margin: auto;
+  margin-block: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.hero {
+  text-align: center;
+}
+
+.input_section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 250px;
+
+  resize: none;
+
+  background: #22222c;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 20px;
+
+  padding: 1.5rem;
+
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+
+/* CONTROLS ROW */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* CHECKBOX GROUP */
+.left_controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.custom_checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  /* font-size: 16px;
+  font-weight: 300; */
+}
+
+.custom_checkbox input {
+  display: none;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.custom_checkbox input:checked + .checkmark {
+  background: #1b1b2d;
+  border-color: #ffffff;
+}
+
+.custom_checkbox input:checked + .checkmark::after {
+  content: ✓;
+  color: #ffffff;
+  position: absolute;
+  top: -2px;
+  left: 3px;
+  /* font-size: 16px; */
+}
+
+/* STATISTICS */
+
+.stats_grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 20px;
+}
+
+.card {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 25px;
+  padding-block: 50px;
+  border-radius: 20px;
+}
+
+.card p {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.purple {
+  background: #c48cff;
+  color: #1b1b2d;
+}
+
+.yellow {
+  background: #ffb300;
+  color: #1b1b2d;
+}
+
+.orange {
+  background: #ff8661;
+  color: #1b1b2d;
+}
+
+.density_section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

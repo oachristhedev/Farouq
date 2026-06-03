@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <meta name="author" content="oachristhedev" />
+    <title>Project 01</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo">Logo</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <section>
+      <h1>Hello World</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+        placeat cum dolores numquam tenetur voluptate adipisci tempore nisi
+        alias laborum saepe, eos enim? Officiis accusantium aspernatur velit
+        voluptatem nisi laudantium!
+      </p>
+      <div class="btns">
+        <button id="btn-01">Button</button>
+        <button id="btn-02">Button</button>
+      </div>
+    </section>
+    <section>
+      <h1>Hello World</h1>
+      <div class="div">
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+    <section>
+      <h1>Hello World</h1>
+      <form action="">
+        <div id="input-fld">
+          <input type="text" />
+          <input type="text" />
+          <input type="text" />
+          <input type="text" />
+        </div>
+
+        <button id="form-btn" type="submit"></button>
+      </form>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div id="links">
+        <a class="lnk" href="#">Home</a>
+        <a class="lnk" href="#">About</a>
+        <a class="lnk" href="#">Services</a>
+        <a class="lnk" href="#">Contact</a>
+      </div>
+    </footer>
+    <!-- Script -->
+    <script>
+      // Selecting by Id
+      /*
+      let btn_01 = document.getElementById("btn-01");
+      console.log(btn_01);
+      btn_01.style.backgroundColor = "red"
+      btn_01.style.color = "#ffffff"
+      btn_01.style.paddingInline = "25px"
+      btn_01.style.paddingBlock = "5px"
+      */
+
+      // Selecting by Class
+      /*      let lnk = document.getElementsByClassName("lnk")
+      console.log(lnk);
+      lnk[1].style.color = "red"
+      lnk[1].style.textDecoration = "none"
+
+      for (let i = 0; i < lnk.length; i++) {
+        const element = lnk[i];
+
+        element.style.textDecoration = "none"
+        
+      }
+        */
+
+      // Selection by Tag
+
+      const body = document.body.getElementsByTagName("body");
+      console.log(body);
+
+      let sect = document.getElementsByTagName("section");
+      console.log(sect);
+
+      for (let i = 0; i < sect.length; i++) {
+        const element = sect[i];
+
+        element.style.height = "100vh";
+      }
+
+      sect[0].style.backgroundColor = "#e2ef3c";
+
+      sect[1].style.backgroundColor = "#9ca61b";
+      sect[1].style.color = "#ffffff";
+
+      sect[2].style.backgroundColor = "#eff693";
+
+      // Query Selector
+      /*
+      let sections = document.querySelector("section");
+      let sections = document.querySelector("#section");
+      let sections = document.querySelector(".section");
+      let sections = document.querySelectorAll("section");
+      let sections = document.querySelectorAll("#section");
+      let sections = document.querySelectorAll(".section");
+      */
+     
+     
+    </script>
+  </body>
+</html>

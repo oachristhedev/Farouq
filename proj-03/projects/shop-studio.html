@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop Studio · Christopher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/shop-studio.css" />
+</head>
+
+<body>
+  <header class="shop-header">
+    <a class="shop-header__back" href="../index.html#projects">← Back to portfolio</a>
+    <div class="shop-header__row">
+      <div>
+        <h1>Shop Studio</h1>
+        <p class="shop-header__sub">Demo storefront · cart persists in your browser</p>
+      </div>
+      <button type="button" class="cart-toggle" id="cart-toggle" aria-expanded="false" aria-controls="cart-panel">
+        Cart <span class="cart-toggle__count" id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="shop-main">
+    <div class="shop-toolbar">
+      <label class="shop-search">
+        <span class="sr-only">Search products</span>
+        <input type="search" id="search" placeholder="Search products…" />
+      </label>
+      <select id="category-filter" aria-label="Filter by category">
+        <option value="all">All categories</option>
+        <option value="apparel">Apparel</option>
+        <option value="accessories">Accessories</option>
+        <option value="home">Home</option>
+      </select>
+    </div>
+    <p class="shop-status" id="shop-status" aria-live="polite">6 products</p>
+    <ul class="product-grid" id="product-grid"></ul>
+  </main>
+
+  <aside class="cart-panel" id="cart-panel" aria-label="Shopping cart" hidden>
+    <div class="cart-panel__header">
+      <h2>Your cart</h2>
+      <button type="button" class="cart-panel__close" id="cart-close" aria-label="Close cart">×</button>
+    </div>
+    <ul class="cart-panel__items" id="cart-items"></ul>
+    <p class="cart-panel__empty" id="cart-empty">Your cart is empty.</p>
+    <footer class="cart-panel__footer">
+      <p class="cart-panel__total">Total: <strong id="cart-total">$0.00</strong></p>
+      <button type="button" class="btn-checkout" id="checkout-btn" disabled>Checkout (demo)</button>
+    </footer>
+  </aside>
+  <div class="cart-overlay" id="cart-overlay" hidden></div>
+
+  <script src="../js/shop-studio.js" defer></script>
+</body>
+
+</html>

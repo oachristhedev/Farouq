@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+  <body>
+    <div
+      id="container"
+      class="w-full h-fit py-5 px-20 bg-gray-200 flex items-center justify-between"
+    >
+      <button
+        id="parent"
+        class="relative w-fit bg-gray-600 text-white font-sans text-[24px] px-8 py-2 rounded-md"
+      >
+        Click Me
+        <div
+          id="child"
+          class="absolute hidden top-full left-0 mt-2 bg-gray-300 text-gray-600 font-sans text-[16px] w-40 rounded-md shadow-lg z-50"
+        >
+          <div class="flex flex-col px-2 gap-2">
+            <a href="#" id="item_01" class="border-b border-gray-400 py-4"
+              >Item</a
+            >
+            <a href="#" id="item_02" class="border-b border-gray-400 py-4"
+              >Item</a
+            >
+            <a href="#" id="item_03" class="border-b border-gray-400 py-4"
+              >Item</a
+            >
+            <a href="#" id="item_04" class="py-4"
+              >Item</a
+            >
+          </div>
+        </div>
+      </button>
+
+      <div id="logo">
+        <h1 class="uppercase font-semibold text-[36px]">Big Logo</h1>
+      </div>
+
+      <div id="nav_btn">
+        <button
+          class="w-fit bg-gray-600 text-white font-sans text-[24px] px-8 py-2 rounded-md"
+        >
+          Contact
+        </button>
+        <button
+          class="w-fit bg-gray-600 text-white font-sans text-[24px] px-8 py-2 rounded-md"
+        >
+          Log in
+        </button>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+      let parent = document.querySelector("#parent");
+      let dropdown = document.querySelector("#child");
+
+      parent.addEventListener("click", function () {
+        dropdown.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

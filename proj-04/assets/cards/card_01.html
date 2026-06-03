@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        height: 100vh;
+        margin: auto;
+        background: gray;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Montserrat";
+        line-height: 1;
+      }
+
+      h1 {
+        font-size: 72px;
+        font-weight: 600;
+      }
+    
+    .card p {
+        font-family: "Poppins";
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .purple {
+        padding-inline: 25px;
+        padding-block: 50px;
+    }
+    
+    .card_container {
+        background: #c48cff;
+        width: 450px;
+        gap: 20px;
+        border-radius: 20px;
+        color: #1b1b2d;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    /* .card_design {
+    }
+     */
+    .card_design{
+        width: 50%;
+        /* max-height: 250px; */
+        background: #dfbcfe;
+        border-radius: 0 20px 20px 0;
+    
+        display: grid;
+        grid-template-columns: repeat(2, 60px);
+        gap: 12px;
+        padding: 20px;
+      } 
+
+      .pill_v{
+        width: 60px;
+        height: 90px;
+        background: #c084fc;
+        border-radius: 100px;
+    }
+      .pill_h{
+        width: 60px;
+        height: 90px;
+        background: #c084fc;
+        border-radius: 100px;
+    }
+    
+    .circle{
+        width: 60px;
+        height: 60px;
+        background: #c084fc;
+        border-radius: 50%;
+      }
+    </style>
+    <div class="container">
+      <div class="card_container">
+        <article class="card purple">
+          <h1 id="characterCount">00</h1>
+          <p>Total Characters</p>
+        </article>
+        <!-- DESGIN: CARD -->
+        <div class="card_design">
+            <div class="pill_v"></div>
+            <div class="pill_v"></div>
+            
+            <!-- <div class="circle"></div> -->
+            <!-- <div class="circle"></div> -->
+            <!-- <div class="circle"></div> -->
+            <div class="pill_h"></div>
+            <div class="circle"></div>
+            <div class="pill_h"></div>
+            <div class="circle"></div>
+
+            <div class="pill"></div>
+            <div class="pill"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

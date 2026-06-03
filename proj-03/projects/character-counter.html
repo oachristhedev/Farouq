@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Real-time text analyzer — character count, word count, and reading time." />
+  <title>Character Counter · Christopher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/character-counter.css" />
+</head>
+
+<body>
+  <header class="app-header">
+    <a class="app-header__back" href="../index.html#projects">← Back to portfolio</a>
+    <h1 class="app-header__title">Character Counter</h1>
+  </header>
+
+  <main class="app-main">
+    <p class="app-intro">Analyze your text in real-time — characters, words, sentences, and reading time.</p>
+
+    <div class="stats" aria-live="polite" aria-atomic="true">
+      <div class="stat-card">
+        <span class="stat-card__value" id="char-count">0</span>
+        <span class="stat-card__label">Characters</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__value" id="word-count">0</span>
+        <span class="stat-card__label">Words</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__value" id="sentence-count">0</span>
+        <span class="stat-card__label">Sentences</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__value" id="reading-time">0 min</span>
+        <span class="stat-card__label">Reading time</span>
+      </div>
+    </div>
+
+    <label class="sr-only" for="text-input">Enter text to analyze</label>
+    <textarea id="text-input" class="text-input" rows="10"
+      placeholder="Start typing here… (or paste your text)"></textarea>
+
+    <div class="options">
+      <label class="option">
+        <input type="checkbox" id="exclude-spaces" />
+        Exclude spaces
+      </label>
+      <label class="option">
+        <input type="checkbox" id="set-limit" />
+        Set character limit
+      </label>
+      <label class="option option--limit" id="limit-wrap" hidden>
+        Limit:
+        <input type="number" id="char-limit" min="1" max="100000" value="300" />
+      </label>
+    </div>
+
+    <p class="limit-warning" id="limit-warning" role="status" hidden></p>
+  </main>
+
+  <script src="../js/character-counter.js" defer></script>
+</body>
+
+</html>

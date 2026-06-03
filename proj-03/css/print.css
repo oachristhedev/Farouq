@@ -1,0 +1,38 @@
+@media print {
+  .site-header,
+  .skip-link,
+  .theme-toggle,
+  .nav__toggle,
+  .nav__menu,
+  .hero__code,
+  .contact__form,
+  .back-to-top,
+  .nav__cta {
+    display: none !important;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .section {
+    padding-block: 1.5rem;
+    break-inside: avoid;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.75rem;
+    color: #555;
+  }
+
+  .project-card__links a[href^="http"]::after {
+    content: none;
+  }
+}
